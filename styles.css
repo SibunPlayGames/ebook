@@ -1,0 +1,248 @@
+/* Define colors based on the reference website */
+:root {
+    --primary-background: #f8f9fa;
+    --header-background: #ffffff;
+    --text-color: #343a40;
+    --heading-color: #000;
+    --button-background: #333;
+    --button-hover-background: #555;
+}
+
+/* Body styling */
+body {
+    background-color: var(--primary-background);
+    color: var(--text-color);
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: var(--header-background);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: auto; /* Pushes the logo to the left, allowing nav to align to the right */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+    font-weight: 700; /* Bold text */
+}
+
+nav a:hover {
+    color: var(--button-background);
+}
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    background-color: var(--primary-background);
+    position: relative;
+}
+
+.welcome-text {
+    max-width: 50%;
+}
+
+.welcome-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold text */
+    margin: 0 0 20px 0;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.welcome-logo {
+    max-width: 45%;
+    height: auto;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 80px 60px;
+    background-color: var(--header-background);
+    position: relative;
+}
+
+.why-choose-us h2 {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.why-choose-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.why-choose-us-logo {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    height: 200px;
+    width: auto;
+    z-index: -1;
+}
+
+.why-choose-us-box {
+    background-color: #ffffff;
+    border: 1px solid var(--primary-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: calc(50% - 30px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.why-choose-us-box h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700; /* Bold text */
+    margin-bottom: 15px;
+}
+
+.why-choose-us-box p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* What We Offer Section */
+.what-we-offer {
+    padding: 80px 60px;
+    background-color: var(--primary-background);
+}
+
+.what-we-offer h2 {
+    color: var(--heading-color);
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.offer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.offer-box {
+    background-color: #ffffff;
+    border: 1px solid var(--primary-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: calc(50% - 30px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.offer-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.offer-box h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700; /* Bold text */
+    margin-bottom: 15px;
+}
+
+.offer-box p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 80px 60px;
+    background-color: var(--primary-background);
+}
+
+.featured-products h2 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold text */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid var(--primary-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 30px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700; /* Bold text */
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--header-background);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
